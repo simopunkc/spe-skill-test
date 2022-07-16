@@ -1,9 +1,4 @@
 class SpeSkillTest {
-  constructor(name, year) {
-    this.name = name;
-    this.year = year;
-  }
-
   narcissisticNumber(input) {
     const digit = input.toString().length;
     const numbers = input.toString().split("");
@@ -54,6 +49,7 @@ class SpeSkillTest {
       for (let j = 0; j < arr2.length; j++) {
         if (arr1[i] == arr2[j]) {
           temp = true
+          break
         }
       }
       if (!temp) {
@@ -62,7 +58,6 @@ class SpeSkillTest {
     }
     return result
   }
-
 }
 
 describe("Unit Test", () => {
